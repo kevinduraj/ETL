@@ -1,4 +1,25 @@
 #!/bin/bash 
+#---------------------------------------------------------------#
 
-mvn archetype:generate -DgroupId=alfa -DartifactId=BrowseDir -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false 
+PROGRAM="BrowseDirectory"
+GROUP="alfa"
 
+
+#---------------------------------------------------------------#
+function QuickStart() {
+
+mvn archetype:generate                                  \
+    -DartifactId=${PROGRAM}                             \
+    -DgroupId=${GROUP}                                  \
+    -DarchetypeArtifactId=maven-archetype-quickstart    \
+    -DinteractiveMode=false 
+}
+
+#---------------------------------------------------------------#
+#                     Main 
+#---------------------------------------------------------------#
+
+QuickStart
+
+
+#---------------------------------------------------------------#

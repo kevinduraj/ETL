@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>alfa</groupId>
-  <artifactId>BrowseDir</artifactId>
+  <artifactId>BrowseDirectory</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>BrowseDir</name>
+  <name>BrowseDirectory</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
