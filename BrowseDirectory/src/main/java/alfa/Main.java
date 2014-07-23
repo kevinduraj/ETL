@@ -13,7 +13,7 @@ public class Main {
         System.out.println("--- Browse Directory ---");
         
         Collection<File> all = new ArrayList<File>();
-        addTree(new File("C:\\Python27"), all);
+        browseSubDir(new File("C:\\Python27"), all);
         
         for( File str :all) {
             System.out.println(str);
@@ -22,14 +22,14 @@ public class Main {
     }
     /*--------------------------------------------------------------------------------------------*/
 
-    static void addTree(File file, Collection<File> all) {
+    static void browseSubDir(File file, Collection<File> all) {
         File[] children = file.listFiles();
         if (children != null) {
             for (File child : children) {
                 
                 //System.out.println("child = " + child.toString());
                 all.add(child);
-                addTree(child, all);
+                browseSubDir(child, all);
             }
         }
     }
