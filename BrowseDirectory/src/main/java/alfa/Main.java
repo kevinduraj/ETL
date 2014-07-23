@@ -13,26 +13,30 @@ public class Main {
         System.out.println("--- Browse Directory ---");
 
         Collection<File> all = new ArrayList<File>();
-        browseSubDir(new File("C:\\Python27"), all);
+        browseSubDir(new File("C:\\Python27"), ".py", all);
 
-        for (File str : all) {
-            System.out.println(str);
-        }
-
+        displayFiles(all);
     }
     /*--------------------------------------------------------------------------------------------*/
-    static void browseSubDir(File file, Collection<File> all) {
+    static void browseSubDir(File file, String extension, Collection<File> all) {
         
         File[] children = file.listFiles();
         if (children != null) {
             for (File child : children) {
 
-                if (child.toString().endsWith(".txt")) {
+                if (child.toString().endsWith(extension)) {
                     all.add(child);
                 }
-                browseSubDir(child, all);
+                browseSubDir(child, extension, all);
             }
         }
     }
     /*--------------------------------------------------------------------------------------------*/
+    static void displayFiles(Collection<File> all) {
+        
+        for (File str : all) {
+            System.out.println(str);
+        }        
+    }
+    /*--------------------------------------------------------------------------------------------*/    
 }
