@@ -24,12 +24,14 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.apache.directory.shared</groupId>
             <artifactId>shared-all</artifactId>
             <version>0.9.18</version>
             <type>jar</type>
         </dependency>
+        
     </dependencies>
 
     <!--  Build Executable JAR -->
