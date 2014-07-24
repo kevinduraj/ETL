@@ -1,4 +1,4 @@
-package alfa;
+package alfa1;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Main {
         System.out.println("--- Browse Directory ---");
 
         Collection<File> all = new ArrayList<File>();
-        browseSubDir(new File("C:\\Python27"), ".py", all);
+        browseSubDir(new File("C:\\Python27"), ".txt", all);
 
         displayFiles(all);
     }
