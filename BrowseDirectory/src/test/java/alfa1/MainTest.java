@@ -1,4 +1,4 @@
-package alfa;
+package alfa1;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
