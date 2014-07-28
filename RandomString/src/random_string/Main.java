@@ -3,10 +3,22 @@ package random_string;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Main {
 
     public static void main(String[] args) {
         
+        //large_string();
+        maximum_memory();
+    }  
+
+    private static void large_string() {
+        LargeString lstring = new LargeString();
+        lstring.plainString();
+        lstring.plainStringBuilder();
+    }
+    
+    private static void maximum_memory() {
         List<String> list = new ArrayList();
         RandomString str = new RandomString(256);
 
